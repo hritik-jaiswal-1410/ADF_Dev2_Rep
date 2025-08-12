@@ -1,0 +1,9 @@
+{
+	"name": "hj-dev-adf-2",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d2ef4984-7acc-45c8-9337-0255befacfa2",
+		"tenantId": "0ea0bfae-8351-4ada-8a80-e294cbcc638c"
+	}
+}
