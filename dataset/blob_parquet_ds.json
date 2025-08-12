@@ -1,0 +1,20 @@
+{
+	"name": "blob_parquet_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output",
+				"container": "adfdemocontainer"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

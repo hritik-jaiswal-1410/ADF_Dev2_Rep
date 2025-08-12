@@ -1,0 +1,41 @@
+{
+	"name": "blob_csv_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "orders.csv",
+				"folderPath": "input",
+				"container": "adfdemocontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "order_id",
+				"type": "String"
+			},
+			{
+				"name": "order_date",
+				"type": "String"
+			},
+			{
+				"name": "customer_id",
+				"type": "String"
+			},
+			{
+				"name": "order_status",
+				"type": "String"
+			}
+		]
+	}
+}
